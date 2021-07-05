@@ -110,7 +110,7 @@ tail -3 test.txt
 
 - Task with * . Write script to show which pages Google checked from the website   
  ```console
- grep "Google" test.txt | wc -l
+ grep "Google" test.txt | awk '{print $7}';echo "Total: " | tr '\n' ' '; grep "Google" test.txt | wc -l
 ```
 
 ## Replace
