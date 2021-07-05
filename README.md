@@ -80,7 +80,7 @@ date
 
 - Count lines in the file test.txt.  
  ```console
- ac -l test.txt
+ wc -l test.txt
 ```
 
 - Show last 3 lines from the test.txt file.   
@@ -95,7 +95,7 @@ tail -3 test.txt
 
 - IP address with most requests.  
  ```console
- awk '{print $1}' test.txt | sort | uniq -c | sort -nr | head -n 10
+ awk '{print $1}' test.txt | sort | uniq -c | sort -nr | head -n 1
 ```
 
 - Top 3 IP addresses by amount of POST requests.  
@@ -105,7 +105,7 @@ tail -3 test.txt
 
 - Which IP addresses received 403 error ?   
  ```console
- grep '403' test.txt | awk '{print $1}' | sort | uniq | sort -nr
+ awk '{print $1 " " $9}' test.txt | grep "403" | sort | uniq -c | sort -nr
 ```
 
 - Task with * . Write script to show which pages Google checked from the website   
