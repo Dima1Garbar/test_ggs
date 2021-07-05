@@ -1,7 +1,7 @@
 ## Basic work with files
 
-- Create directory test1
- //// mkdir test1
+- Create directory test1  
+ ``` console mkdir test1 ```
 
 - Create file test1.txt inside the test1 directory.
  //// touch test1.txt
