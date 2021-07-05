@@ -63,14 +63,14 @@ rm -rf test
 ```
 
 - Create simple script which prints current date. Try to execute it.  
- ```console
-  mkdir script.sh
+```console
+  mkdir script.sh 
 ```  
- ```
-console chmod +x script.sh
+```console
+ chmod +x script.sh
 ```  
- ```
-console ./script.sh
+```console 
+./script.sh
 ```  
  ```console
 date
